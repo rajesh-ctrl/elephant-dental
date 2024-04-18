@@ -8,8 +8,8 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   /* Global styles */
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
     line-height: 1.5;
   }
   
@@ -21,12 +21,19 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   
   /* Header styles */
   header {
-    background-color: #727171;
+    background-color: #102363fa;
     color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    /* background-color: #ffffff; Header background color */
+    /* padding: 20px; Add padding */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Header shadow */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other content */
   }
   
   .logo {
@@ -35,14 +42,15 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   }
   
   .logo img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
   }
   
   nav ul {
     list-style-type: none;
     display: flex;
+    padding-right: 10px;
   }
   
   nav ul li {
@@ -76,7 +84,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   
   /* Hero section styles */
   #hero {
-    background-image: url("banner.jpg");
+    background-image: url("Images/banner.jpg");
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -123,7 +131,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #727171;
+    background-color: #102363fa;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
@@ -133,78 +141,99 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   
   /* Services section styles */
   #services {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  #services h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
-  .service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .service img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .service h3 {
-    font-size: 24px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service-widget {
+    padding: 30px;
+    width: calc(33.33% - 40px); /* 33.33% width for each widget with 20px margin on each side */
+    margin: 15px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Light blue background color */
+    border: 1px solid #dbe8ff; /* Pleasant border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    padding-bottom: 30px;
+    
+}
+
+.service-widget:hover {
+    transform: scale(1.05); /* Grow on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.service-widget img {
+
+    height: 200px;
+    display: block;
+    border-radius: 8px;
     margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .service p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.service-widget h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+.service-widget p {
     font-size: 16px;
-    color: #666;
-  }
-  
+    line-height: 1.6;
+}
+
+
 
   /* Doctors section styles */
   #doctors {
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  #doctors h2 {
-    font-size: 30px;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.doctor-row {
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 40px;
-    color: #333;
-  }
-  
-  .doctor {
+}
+
+.doctor-widget {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .doctor img {
-    max-width: 200px;
-    height: auto;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(25% - 40px); /* Adjust width to fit 4 doctors per row */
+}
+
+.doctor-widget img {
+    max-width: 100%;
     border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  .doctor h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .doctor p {
-    font-size: 16px;
-    color: #666;
-  }
+    margin-bottom: 15px;
+}
+
+.main-doctor {
+    width: calc(50% - 40px); /* Adjust width for main doctor */
+    margin-bottom: 20px ;
+}
+
+.doctor-widget:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
   
   /* Contact section styles */
 /* Contact section styles */
@@ -230,7 +259,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 
   form button {
       padding: 10px 20px;
-      background-color: #333;
+      background-color: #102363fa;
       color: #fff;
       border: none;
       border-radius: 4px;
@@ -328,7 +357,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
 
   /* Footer styles */
   footer {
-    background-color: #727171;
+    background-color: #102363fa;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -341,7 +370,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
   .icon-link {
     display: inline-block;
     margin-right: 10px;
-    color: #333;
+    color: #b1e958;
     font-size: 24px;
     text-decoration: none;
   }
@@ -350,36 +379,4 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     color: #007bff;
   }
   
-  .custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: rgba(15, 127, 99, 0.386);
-    pointer-events: none;
-    z-index: 9999;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-  }
-  
-  .custom-cursor.active {
-    transform: scale(2);
-    background-color: rgba(46, 237, 189, 0.386);
-    opacity: 1;
-  }
 
-  .trail-dot {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(96, 88, 96, 0.826);
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease;
-  }
-  
-  
