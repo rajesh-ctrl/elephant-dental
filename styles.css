@@ -144,50 +144,71 @@ body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     max-width: 1920px;
     margin: 0 auto;
     padding: 20px;
-}
+  }
 
-.service-widget {
-    padding: 30px;
-    width: calc(33.33% - 40px); /* 33.33% width for each widget with 20px margin on each side */
-    margin: 15px;
-    display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    background-color: #ffffff; /* Light blue background color */
-    border: 1px solid #dbe8ff; /* Pleasant border */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    padding-bottom: 30px;
-    
-}
+  .service-widget-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
 
-.service-widget:hover {
-    transform: scale(1.05); /* Grow on hover */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
+  .service-widget {
+      padding: 30px;
+      margin: 15px;
+      box-sizing: border-box;
+      background-color: #ffffff; /* Light blue background color */
+      border: 1px solid #dbe8ff; /* Pleasant border */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+      padding-bottom: 30px;
+      flex-basis: calc(33.33% - 40px); /* 33.33% width for each widget with 20px margin on each side */
+  }
 
-.service-widget img {
+  .service-widget:hover {
+      transform: scale(1.05); /* Grow on hover */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
 
-    height: 200px;
-    display: block;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+  .service-widget img {
+      height: 200px;
+      display: block;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
 
-.service-widget h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  .service-widget h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
 
-}
+  .service-widget p {
+      font-size: 16px;
+      line-height: 1.6;
+  }
 
-.service-widget p {
-    font-size: 16px;
-    line-height: 1.6;
-}
+  /* For smaller screens, show 2 widgets per row */
+  @media (max-width: 768px) {
+      .service-widget {
+          flex-basis: calc(50% - 40px);
+      }
+      .service-widget img {
+          height: 150px;
+      }
+  }
+
+  /* For even smaller screens, show 1 widget per row */
+  @media (max-width: 480px) {
+      .service-widget {
+          flex-basis: 100%;
+      }
+      .service-widget img {
+          height: 100px;
+      }
+  }
 
 
 
