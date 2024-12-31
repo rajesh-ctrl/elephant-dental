@@ -1,208 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elephant Dental Clinic</title>
-    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="Images/Logo/favicon.ico.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elephant Dental Clinic</title>
+  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="Images/Logo/favicon.ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="script.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="Images/Logo/favicon.ico.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#doctors">Doctors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-
-    <section id="hero">
-        <div class="hero-content">
-          <h1>Welcome to our Dental Clinic</h1>
-          <p>Providing quality dental care for your healthy smile</p>
-          <a href="#services" class="btn">Learn More</a>
-        </div>
-    </section>
-      
+  <header>
+    <div class="logo">
+      <img src="Images/Logo/favicon.ico.png" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="service-widget-container">
-          <div class="service-widget">
-              <img src="Images/Services/service1.jpg" alt="Service 1">
-              <h3>Teeth Whitening</h3>
-              <p>Transform your smile with our professional teeth whitening treatments. Our advanced procedures effectively remove stains and discoloration.</p>
-          </div>
-          <div class="service-widget">
-              <img src="Images/Services/service2.jpg" alt="Service 2">
-              <h3>Dental Implants</h3>
-              <p>Regain the functionality and aesthetics of your smile with our state-of-the-art dental implant solutions.</p>
-          </div>
-          <div class="service-widget">
-              <img src="Images/Services/service3.jpg" alt="Service 3">
-              <h3>Orthodontic Treatment</h3>
-              <p>Enhance your oral health and appearance with our comprehensive orthodontic treatments. From traditional braces to clear aligners</p>
-          </div>
-          <div class="service-widget">
-              <img src="Images/Services/service4.jpg" alt="Service 4">
-              <h3>Dental Checkups</h3>
-              <p>Our thorough examinations and professional cleanings help prevent dental issues and maintain optimal oral hygiene.</p>
-          </div>
-          <div class="service-widget">
-              <img src="Images/Services/service55.jpg" alt="Service 5">
-              <h3>Root Canal Therapy</h3>
-              <p>Experience relief from discomfort and save your tooth from extraction with our effective root canal treatments.</p>
-          </div>
-          <div class="service-widget">
-              <img src="Images/Services/service6.jpg" alt="Service 6">
-              <h3>Oral Surgery</h3>
-              <p>Address complex dental issues with precision and care through our comprehensive oral surgery treatments.</p>
-          </div>
-      </div>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Welcome to our Dental Clinic</h1>
+      <p>Providing quality dental care for your healthy smile</p>
+      <a href="#services" class="btn">Learn More</a>
+    </div>
   </section>
-  
+
+
+
+  <section id="services">
+    <h2>What we do</h2>
+    <div class="service-widget-container">
+      <div class="service-widget">
+        <img src="Images/Services/tooth-whitening.png" alt="Service 1">
+        <h3>Teeth Whitening</h3>
+        <p>Transform your smile with our professional teeth whitening treatments. Our advanced procedures effectively
+          remove stains and discoloration.</p>
+      </div>
+
+      <div class="service-widget">
+        <img src="Images/Services/implant.png" alt="Service 2">
+        <h3>Dental Implants</h3>
+        <p>Regain the functionality and aesthetics of your smile with our state-of-the-art dental implant solutions.</p>
+      </div>
+      <div class="service-widget">
+        <img src="Images/Services/braces.png" alt="Service 3">
+        <h3>Orthodontic Treatment</h3>
+        <p>Enhance your oral health and appearance with our comprehensive orthodontic treatments. From traditional
+          braces to clear aligners</p>
+      </div>
+      <div class="service-widget">
+        <img src="Images/Services/dentistry.png" alt="Service 4">
+        <h3>Dental Checkups</h3>
+        <p>Our thorough examinations and professional cleanings help prevent dental issues and maintain optimal oral
+          hygiene.</p>
+      </div>
+      <div class="service-widget">
+        <img src="Images/Services/root-canal.png" alt="Service 5">
+        <h3>Root Canal Therapy</h3>
+        <p>Experience relief from discomfort and save your tooth from extraction with our effective root canal
+          treatments.</p>
+      </div>
+      <div class="service-widget">
+        <img src="Images/Services/dental-surgery.png" alt="Service 6">
+        <h3>Oral Surgery</h3>
+        <p>Address complex dental issues with precision and care through our comprehensive oral surgery treatments.</p>
+      </div>
+    </div>
+  </section>
+
+
 
 
   <section id="doctors">
-    <h2 style="margin-left: -380px;">Doctors</h2>
+    <h2 style="margin-bottom: 20px; width: 100%;">Our Doctors</h2>
+    <div class=" doctor-row">
+      <div class="doctor-widget main-doctor">
+        <img src="Images/Sesha.jpg" alt="Main Doctor">
+        <h3>Dr. Seshadri Jay BDS, FCE Malaysia </h3>
+        <p>Dr. Seshadri Jay is a dedicated Dental Surgeon with 7 years of experience specializing in root canal
+          treatments and advanced endodontic care. Holding a Bachelor of Dental Surgery (BDS) and a Fellowship in
+          Certificate Endodontics (FCE) from Malaysia, he is skilled in managing complex dental cases with precision and
+          care. Dr. Seshadri is passionate about restoring smiles through advanced root canal therapy, endodontic
+          procedures, and aesthetic dentistry. Known for his commitment to patient care, he continuously updates his
+          knowledge through international workshops and training. His philosophy centers on delivering expert dental
+          solutions to enhance oral health and overall well-being.</p>
+      </div>
+    </div>
+    <!-- 
+
+8.Dr.Steffina Christina BDS
+  
+9.Dr.Sathya BDS -->
     <div class="doctor-row">
-        <div class="doctor-widget main-doctor">
-            <img src="placeholder.jpg" alt="Main Doctor">
-            <h3>Main Doctor Name</h3>
-            <p>Main Doctor Description</p>
-        </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 1">
+        <h3>Dr. Fayeez Abdullah MDS</h3>
+        <p>Prosthodontist and Implantologist</p>
+      </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 2">
+        <h3>Dr. Vivek Ganesh MDS</h3>
+        <p>Oral and Maxillofacial Surgeon</p>
+      </div>
     </div>
     <div class="doctor-row">
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 1">
-            <h3>Doctor 1 Name</h3>
-            <p>Doctor 1 Description</p>
-        </div>
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 2">
-            <h3>Doctor 2 Name</h3>
-            <p>Doctor 2 Description</p>
-        </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 3">
+        <h3>Dr. Manikandan MDS</h3>
+        <p>Pediatric dentist</p>
+      </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 4">
+        <h3>Dr. Bala MDS</h3>
+        <p>Oral and Maxillofacial Surgeon</p>
+      </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 5">
+        <h3>Dr.Joshil Adolf MDS </h3>
+        <p>Endodontist</p>
+      </div>
     </div>
     <div class="doctor-row">
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 3">
-            <h3>Doctor 3 Name</h3>
-            <p>Doctor 3 Description</p>
-        </div>
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 4">
-            <h3>Doctor 4 Name</h3>
-            <p>Doctor 4 Description</p>
-        </div>
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 5">
-            <h3>Doctor 5 Name</h3>
-            <p>Doctor 5 Description</p>
-        </div>
-    </div>
-    <div class="doctor-row">
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 6">
-            <h3>Doctor 6 Name</h3>
-            <p>Doctor 6 Description</p>
-        </div>
-        <div class="doctor-widget">
-            <img src="placeholder.jpg" alt="Doctor 7">
-            <h3>Doctor 7 Name</h3>
-            <p>Doctor 7 Description</p>
-        </div>
+      <div class="doctor-widget">
+        <img src="Images/MaleDoctor.jpg" alt="Doctor 6">
+        <h3>Dr. Santosh Prabu MDS </h3>
+        <p>Orthodontist and Aligner Consultant</p>
+      </div>
+      <div class="doctor-widget">
+        <img src="Images/FemaleDoctor.png" alt="Doctor 7">
+        <h3>Dr. Priyadarshini MDS</h3>
+        <p>Orthodontist and Aligner Consultant</p>
+      </div>
     </div>
   </section>
 
 
   <!-- others -->
-      
-    <div class="floating-icon whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
-          <img src="Images/whatsapp.png" alt="WhatsApp Icon">
-        </a>
-      </div>
-      
-      <div class="floating-icon call">
-        <a href="tel:1234567890">
-          <img src="Images/phone-icon.png" alt="Phone Icon">
-        </a>
-      </div>
-    
-    <div class="carousel">
-        <div class="carousel-slide">
-            <img src="a (1).jpg" alt="Image 1">
-        </div>
-        <div class="carousel-slide">
-            <img src="a (2).jpg" alt="Image 2">
-        </div>
-        <div class="carousel-slide">
-            <img src="a (3).jpg" alt="Image 3">
-        </div>
-        <!-- Add more carousel slides as needed -->
-        
-        <a class="carousel-prev" onclick="prevSlide()">&#10094;</a>
-        <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
-    </div>
 
-    <section id="contact">
-        <div class="container">
-          <h2>Contact Us</h2>
-          <div class="contact-info">
-            <div class="contact-details">
-              <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>123 Main Street, City, State, ZIP</p>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-phone-alt"></i>
-                <p>(123) 456-7890</p>
-              </div>
-              <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>info@example.com</p>
-              </div>
-            </div>
-            <div class="contact-form">
-              <h3>Get In Touch</h3>
-              <form id="contactForm" method="POST" action="submit-form.php">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-              </form>
-            </div>
+  <div class="floating-icon whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
+      <img src="Images/whatsapp.png" alt="WhatsApp Icon">
+    </a>
+  </div>
+
+  <div class="floating-icon call">
+    <a href="tel:1234567890">
+      <img src="Images/phone-icon.png" alt="Phone Icon">
+    </a>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="a (1).jpg" alt="Image 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="a (2).jpg" alt="Image 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="a (3).jpg" alt="Image 3">
+    </div>
+    <!-- Add more carousel slides as needed -->
+
+    <a class="carousel-prev" onclick="prevSlide()">&#10094;</a>
+    <a class="carousel-next" onclick="nextSlide()">&#10095;</a>
+  </div>
+
+
+
+  <!-- review -->
+  <section class="google-review">
+    <h2>Google Reviews</h2>
+    <div class="review-carousel">
+      <div class="carousel-container">
+        <div class="card active">
+          <h3>John Doe</h3>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <p>This is an amazing place! Highly recommend it.</p>
+        </div>
+        <div class="card">
+          <h3>Jane Smith</h3>
+          <div class="rating">⭐⭐⭐⭐</div>
+          <p>Great service and friendly staff.</p>
+        </div>
+        <div class="card">
+          <h3>Mike Johnson</h3>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <p>Had a wonderful experience, will come back!</p>
+        </div>
+        <div class="card">
+          <h3>Emily Davis</h3>
+          <div class="rating">⭐⭐⭐</div>
+          <p>Good food, but the wait time was a bit long.</p>
+        </div>
+      </div>
+    </div>
+    <img src="Images/customer-satisfaction.png" alt="" style="    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center the image with margin */
+    display: block; /* Make the image a block element */">
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Main Street, City, State, ZIP</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <p>(123) 456-7890</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@example.com</p>
           </div>
         </div>
-      </section>
-    
-<!-- map -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5920069763765!2d80.20119467507581!3d12.933923687377938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d47259a5e69%3A0xa91d029a4edbf964!2sElephant%20Dental%20clinic!5e0!3m2!1sen!2sin!4v1713452417832!5m2!1sen!2sin" width= 100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
-    <footer>
-        <div class="social-icons">
-          <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
-          <!-- Add more social icons as needed -->
+        <div class="contact-form">
+          <h3>Get In Touch</h3>
+          <form id="contactForm" method="POST" action="submit-form.php">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-        <p>&copy; 2024 Designed and Created by Elephant Dental Clinic. All rights reserved.</p>
-    </footer>
-    
-      
+      </div>
+    </div>
+  </section>
+
+  <!-- map -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5920069763765!2d80.20119467507581!3d12.933923687377938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d47259a5e69%3A0xa91d029a4edbf964!2sElephant%20Dental%20clinic!5e0!3m2!1sen!2sin!4v1713452417832!5m2!1sen!2sin"
+    width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+      <!-- Add more social icons as needed -->
+    </div>
+    <p>&copy; 2024 Designed and Created by Elephant Dental Clinic. All rights reserved.</p>
+  </footer>
+
+
 </body>
+
 </html>
