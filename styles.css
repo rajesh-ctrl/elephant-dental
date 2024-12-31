@@ -323,6 +323,68 @@ nav ul li a.active::before {
 
 
 /* old */
+/* Doctors section styles */
+#doctors {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.doctor-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow wrapping of items */
+  justify-content: space-between;
+  /* Adjust spacing */
+  margin-bottom: 40px;
+}
+
+.doctor-widget {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  /* Reduced margin for better spacing */
+  text-align: center;
+  background-color: #f9f9f9;
+  flex: 1 1 calc(25% - 20px);
+  /* Adjust width to fit 4 doctors per row */
+  box-sizing: border-box;
+  /* Include padding and border in width */
+}
+
+.doctor-widget img {
+  max-width: 100%;
+  /* Ensure image is responsive */
+  height: auto;
+  border-radius: 50%;
+  /* Makes the image circular */
+}
+
+.doctor-widget h3 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.doctor-widget p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .doctor-widget {
+    flex: 1 1 calc(50% - 20px);
+    /* 2 per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-widget {
+    flex: 1 1 100%;
+    /* 1 per row on small screens */
+  }
+}
 
 .doctor-widget {
   background-color: #fff;
