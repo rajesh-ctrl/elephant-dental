@@ -41,7 +41,7 @@ h2 {
 h2:hover {
   transform: translateY(-2px);
   /* Slight lift effect on hover */
-  color: #007BFF;
+  color: #102363fa;
   /* Change color on hover for a modern touch */
 }
 
@@ -129,6 +129,7 @@ nav ul li a.active::before {
 
 /* Hero section styles */
 #hero {
+
   background-image: url("Images/banner.jpg");
   background-size: cover;
   background-position: center;
@@ -144,7 +145,7 @@ nav ul li a.active::before {
 
 
 .hero-content {
-  margin-top: -120px;
+  /* margin-top: -120px; */
   max-width: 800px;
   padding: 20px;
   opacity: 0;
@@ -167,11 +168,13 @@ nav ul li a.active::before {
 .hero-content h1 {
   font-size: 40px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .hero-content p {
   font-size: 20px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .btn {

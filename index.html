@@ -151,13 +151,13 @@
   <!-- others -->
 
   <div class="floating-icon whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=1234567890" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=7305442572" target="_blank">
       <img src="Images/whatsapp.png" alt="WhatsApp Icon">
     </a>
   </div>
 
   <div class="floating-icon call">
-    <a href="tel:1234567890">
+    <a href="tel:7305442572">
       <img src="Images/phone-icon.png" alt="Phone Icon">
     </a>
   </div>
@@ -221,11 +221,11 @@
         <div class="contact-details">
           <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            <p>123 Main Street, City, State, ZIP</p>
+            <p>No. 218,1st floor, Pallikaranai bus stop, Chennai </p>
           </div>
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
-            <p>(123) 456-7890</p>
+            <p>7305442572</p>
           </div>
           <div class="contact-item">
             <i class="fas fa-envelope"></i>
@@ -234,11 +234,25 @@
         </div>
         <div class="contact-form">
           <h3>Get In Touch</h3>
-          <form id="contactForm" method="POST" action="submit-form.php">
+          <form id="contactForm" method="POST" name="contact-form"
+            action="https://script.google.com/macros/s/AKfycbwkRXBFOQyvlF3JOOjIRHZQcSSoi-0a6w-oeOJYtsWzWvhQrK9hspdB9aPwnn3pKTzdOg/exec">
             <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="number" name="number" placeholder="Your Contact Number" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
+            <script>const scriptURL = 'Your Google App Script URL'
+
+              const form = document.forms['contact-form']
+
+              form.addEventListener('submit', e => {
+
+                e.preventDefault()
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                  .then(response => alert("Thank you! Form is submitted"))
+                  .then(() => { window.location.reload(); })
+                  .catch(error => console.error('Error!', error.message))
+              })</script>
           </form>
         </div>
       </div>
