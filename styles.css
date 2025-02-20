@@ -569,7 +569,7 @@ form button {
   /* Adjust as needed */
   height: 200px;
   /* Adjust as needed */
-  background: white;
+  background: rgb(234, 239, 248);
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
